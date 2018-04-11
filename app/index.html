@@ -6,13 +6,45 @@
     <link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 </head>
 <body>
-	
+	<div class="page container row">
+        <header class="header col s12">
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper">
+                        <ul class="">
+                            <li><a href="#" id="btnToLeftBar">Left bar</a></li>
+                            <li><a href="#" id="btnToRightBar">Right bar</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+		<main class=" content col s12">
+            <div class="page-description card col s12">
+                page description
+            </div>
+            <div class="always-visible-block card">
+                always-visible-block
+            </div>
+		</main>
+		<footer class="page-footer">
+            footer
+		</footer >
+        <div class="aside left-aside card open" data-is_open="0">
+            left bar
+        </div>
+        <div class="aside right-aside card open" data-is_open="0">
+            right bar
+        </div>
+	</div>
 
 	
 	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
 
 </body>
 </html>

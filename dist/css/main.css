@@ -1,2 +1,83 @@
 body {
-  background-color: pink; }
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, lightpink), color-stop(75%, lightblue));
+  background: -webkit-linear-gradient(bottom, lightpink 10%, lightblue 75%);
+  background: -o-linear-gradient(bottom, lightpink 10%, lightblue 75%);
+  background: linear-gradient(to top, lightpink 10%, lightblue 75%); }
+
+.page {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.page.row {
+  margin-bottom: 0;
+  margin-top: 0; }
+
+main {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
+
+.row .col {
+  padding: 0;
+  margin: 0; }
+
+.card {
+  margin: 0; }
+
+.page.container {
+  width: 100%;
+  max-width: 1024px;
+  position: relative;
+  overflow: hidden;
+  background-color: whitesmoke; }
+  .page.container .header {
+    height: 40px; }
+    .page.container .header .navbar-fixed {
+      height: 40px; }
+      .page.container .header .navbar-fixed nav {
+        height: 40px;
+        line-height: 40px;
+        max-width: 1024px; }
+  .page.container .page-footer {
+    height: 30px;
+    padding: 0; }
+  .page.container .content {
+    height: 1500px; }
+    .page.container .content .page-description {
+      height: 100px;
+      background-color: lightpink;
+      padding: 10px; }
+    .page.container .content .always-visible-block.card {
+      position: inherit;
+      width: 200px;
+      height: 500px;
+      margin: 10px;
+      float: right;
+      background-color: purple;
+      color: white; }
+    .page.container .content .sticky {
+      position: fixed !important;
+      top: 40px;
+      z-index: 100;
+      float: right; }
+  .page.container .aside {
+    position: absolute;
+    width: 300px;
+    height: -webkit-calc(100vh - 40px);
+    height: calc(100vh - 40px);
+    top: 40px;
+    background-color: lightgreen;
+    z-index: 120; }
+  .page.container .left-aside {
+    left: -300px; }
+  .page.container .right-aside {
+    right: -300px; }
