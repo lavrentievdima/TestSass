@@ -50,25 +50,25 @@ main {
   .page.container .page-footer {
     height: 30px;
     padding: 0; }
-  .page.container .content {
-    height: 1500px; }
-    .page.container .content .page-description {
-      height: 100px;
-      background-color: lightpink;
-      padding: 10px; }
-    .page.container .content .always-visible-block.card {
-      position: inherit;
-      width: 200px;
-      height: 500px;
-      margin: 10px;
-      float: right;
-      background-color: purple;
-      color: white; }
-    .page.container .content .sticky {
-      position: fixed !important;
-      top: 40px;
-      z-index: 100;
-      float: right; }
+  .page.container .content .page-description {
+    height: 100px;
+    background-color: lightpink;
+    padding: 10px; }
+  .page.container .content .always-visible-block.card, .page.container .content .always-visible-block-clone {
+    position: inherit;
+    width: 200px;
+    height: 500px;
+    margin: 10px;
+    float: right;
+    background-color: purple;
+    color: white; }
+  .page.container .content .always-visible-block-clone {
+    background-color: whitesmoke; }
+  .page.container .content .sticky {
+    position: fixed !important;
+    top: 40px;
+    z-index: 100;
+    float: right; }
   .page.container .aside {
     position: absolute;
     width: 300px;
